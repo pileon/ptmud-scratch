@@ -14,7 +14,9 @@
 class location : public basic_object
 {
 public:
-    location() {}
+    location()
+    : exits_{}, characters_{}
+    {}
 
 private:
     // The four cardinal directions, plus up and down

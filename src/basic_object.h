@@ -19,7 +19,9 @@ public:
     { return description_; }
 
 protected:
-    basic_object() {}
+    basic_object()
+    : description_{}
+    {}
 
 private:
     std::string description_;
