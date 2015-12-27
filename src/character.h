@@ -13,7 +13,7 @@
 class character : public basic_object
 {
 public:
-    enum attribute
+    enum class attribute
     {
         intel,
         wisdom,
@@ -25,7 +25,7 @@ public:
         num_attributes
     };
 
-    enum eqpos
+    enum class eqpos
     {
         head,
         left_hand,
@@ -40,6 +40,9 @@ protected:
     {}
 
 private:
+    static constexpr std::size_t num_attributes = static_cast<std::size_t>(attribute::num_attributes);
+    static constexpr std::size_t num_eqpos      = static_cast<std::size_t>(eqpos::num_eqpos);
+
     // std::forward_list<std::shared_ptr<item>> contents_;
 
     std::array<uint8_t, num_attributes> attributes_;
