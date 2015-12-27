@@ -13,7 +13,7 @@
 class character : public basic_object
 {
 public:
-    enum class attribute
+    enum attribute
     {
         intel,
         wisdom,
@@ -21,6 +21,17 @@ public:
         charisma,
         constitution,
         dexterity,
+
+        num_attributes
+    };
+
+    enum eqpos
+    {
+        head,
+        left_hand,
+        right_hand,
+
+        num_eqpos
     };
 
 protected:
@@ -31,7 +42,8 @@ protected:
 private:
     // std::forward_list<std::shared_ptr<item>> contents_;
 
-    std::array<uint8_t, 6> attributes_;
+    std::array<uint8_t, num_attributes> attributes_;
+    // std::array<std::shared_ptr<item>, num_eqpos> equipment_;
 };
 
 
