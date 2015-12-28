@@ -9,7 +9,9 @@
 #include <memory>
 #include <forward_list>
 
-#include "character.h"
+#include "basic_object.h"
+class character;
+class basic_item;
 
 class location : public basic_object
 {
@@ -22,8 +24,8 @@ private:
     // The four cardinal directions, plus up and down
     std::array<std::shared_ptr<location>, 6> exits_;
 
-    std::forward_list<std::shared_ptr<character>> characters_;
-    // std::forward_list<std::shared_ptr<item>> contents_;
+    std::forward_list<std::shared_ptr<character>>  characters_;
+    std::forward_list<std::shared_ptr<basic_item>> contents_;
 };
 
 
