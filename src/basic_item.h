@@ -12,19 +12,20 @@
 class location;
 class character;
 
-class item
+class basic_item : public basic_object
 {
 public:
 
 protected:
-    item()
+    basic_item()
     : location_{},
       owner_{}
     {}
 
 private:
-    std::shared_ptr<location> location_;
-    std::shared_ptr<location> owner_;
+    // Either of location or owner must be a nullptr
+    std::shared_ptr<location> location_;    // Where the basic_item is lying
+    std::shared_ptr<location> owner_;       // Who carries the basic_item
 };
 
 

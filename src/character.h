@@ -10,7 +10,7 @@
 
 #include "basic_object.h"
 class location;
-class item;
+class basic_item;
 
 class character : public basic_object
 {
@@ -80,10 +80,10 @@ private:
 
     std::shared_ptr<location> location_;
 
-    std::forward_list<std::shared_ptr<item>> contents_;  // Carried items
+    std::forward_list<std::shared_ptr<basic_item>> contents_;  // Carried items
 
-    std::array<uint8_t, num_attributes> attributes_;
-    std::array<std::shared_ptr<item>, num_eqpos> equipment_;  // Equipped items
+    std::array<uint8_t, num_attributes>                attributes_;
+    std::array<std::shared_ptr<basic_item>, num_eqpos> equipment_;  // Equipped items
 
     sex sex_;
 };
