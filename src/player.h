@@ -18,6 +18,16 @@ public:
         thief
     };
 
+    // TODO: Player flags
+    // TODO: Player preferences
+    // TODO: Player title
+    // TODO: Player hometown
+    // TODO: Password
+    // TODO: Skills and spells
+    // TODO: Command aliases
+    // TODO: Command parser
+    // TODO: Network connection handling
+
     player()
     : class_{}
     {}
