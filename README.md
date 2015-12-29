@@ -26,14 +26,14 @@ The original PTMUD started its life as a derivative of [CircleMUD](http://www.ci
 derivative of [DikuMUD](https://en.wikipedia.org/wiki/DikuMUD).
 
 PTMUD was born in the spring of 1995 when the main author found out that there were MUD servers available to
-download and run. It started out as a straight-forward clone of CircleMUD and trying to immitate
+download and run. It started out as a straight-forward clone of CircleMUD and trying to imitate
 [GrimneMUD](http://mudstats.com/World/GrimneMUD) which was what the author and his friends were playing at the time.
 
 During its lifetime PTMUD added many of the features that made GrimneMUD unique, but also many other features, some
 that at the time didn't exist in any other MUD (that we knew of). We didn't have many players, but those we had found
 PTMUD to be good (if a bit empty) and some even contributed with ideas and areas.
 
-The original source of PTMUD is long gone, and PTMUD is now not even a footnote in the anals of MUD history.
+The original source of PTMUD is long gone, and PTMUD is now not even a footnote in the annals of MUD history.
 
 ### The name
 
@@ -54,7 +54,7 @@ Once PTMUD-scratch reaches a certain level of maturity I will probably be start 
 ## Differences from standard DikuMUD
 
 There are a few major differences between a standard DikuMUD or a DikuMUD derivative, the most visible being the use of C++ as a programming language, with all that the use of a modern object-oriented programming language entails.
-There are also other differences, like the permissive license, a fully telnet-copliant network stack, and how the world library is divided and handled.
+There are also other differences, like the permissive license, a fully telnet-compliant network stack, and how the world library is divided and handled.
 
 ### The world library
 

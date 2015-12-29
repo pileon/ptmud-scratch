@@ -18,13 +18,21 @@ public:
     std::string& description()
     { return description_; }
 
+    std::string const& name() const
+    { return name_; }
+
+    std::string& name()
+    { return name_; }
+
 protected:
     basic_object()
-    : description_{}
+    : description_{},
+      name_{}
     {}
 
 private:
     std::string description_;
+    std::string name_;
 };
 
 
