@@ -10,10 +10,22 @@
 class player : public character
 {
 public:
+    enum class playerclass
+    {
+        fighter,
+        mage,
+        cleric,
+        thief
+    };
+
+    player()
+    : class_{}
+    {}
 
 protected:
 
 private:
+    playerclass class_;
 };
 
 
