@@ -70,7 +70,9 @@ public:
 protected:
     character()
     : location_{},
+      contents_{},
       attributes_{},
+      equipment_{},
       sex_(sex::neutral)
     {}
 
