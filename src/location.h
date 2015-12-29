@@ -17,7 +17,9 @@ class location : public basic_object
 {
 public:
     location()
-    : exits_{}, characters_{}
+    : exits_{},
+      characters_{},
+      contents_{}
     {}
 
 private:
