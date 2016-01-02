@@ -36,7 +36,8 @@ namespace net
 
         using tcp = asio::ip::tcp;
         servers.push_front(std::make_shared<tcp_server>(io_service, tcp::endpoint(tcp::v4(), 7777)));
-        servers.push_front(std::make_shared<tcp_server>(io_service, tcp::endpoint(tcp::v6(), 7777)));
+        // TODO: Why can't we bind to an IPv6 address?
+        // servers.push_front(std::make_shared<tcp_server>(io_service, tcp::endpoint(tcp::v6(), 7777)));
     }
 
     void clean()

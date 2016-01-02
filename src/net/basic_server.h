@@ -29,19 +29,40 @@ namespace net
     class protocolled_server : public basic_server
     {
     public:
+        protocolled_server(asio::io_service& ios)
+                : basic_server(ios),
+                  endpoint_(),
+                  acceptor_(ios)
+        {
+        }
+
         protocolled_server(asio::io_service& ios, typename Protocol::endpoint const& endpoint)
                 : basic_server(ios),
-                  endpoint_(endpoint)
+                  endpoint_(endpoint),
+                  acceptor_(ios, endpoint)
         {
+            start_accept();
         }
 
         void bind()
         {
-            basic_server::bind<Protocol>();
+            bind(endpoint_);
+        }
+
+        void bind(typename Protocol::endpoint const& endpoint)
+        {
+            acceptor_.bind(endpoint);
+            start_accept();
         }
 
     private:
         typename Protocol::endpoint const endpoint_;
+        typename Protocol::acceptor acceptor_;
+
+        void start_accept()
+        {
+            // TODO: Actually start accepting
+        }
     };
 
     using tcp_server = protocolled_server<asio::ip::tcp>;
