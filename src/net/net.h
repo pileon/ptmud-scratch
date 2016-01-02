@@ -8,6 +8,7 @@
 namespace net
 {
     void init();
+    void clean();
 }
 
 #endif //PTMUD_SCRATCH_NET_H

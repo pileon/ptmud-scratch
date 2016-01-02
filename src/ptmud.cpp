@@ -1,12 +1,9 @@
+#include "ptmud.h"
 #include <iostream>
-
-using namespace std;
-
-void foo();
+#include "net/net.h"
 
 int main()
 {
-    cout << "Hello, World!" << endl;
-    foo();
-    return 0;
+    net::init();
+    net::clean();
 }

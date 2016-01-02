@@ -27,12 +27,10 @@ namespace net
                     io_service.run();
                 });
     }
-}
 
-
-
-
-void foo()
-{
-    std::cout << "Foo!\n";
+    void clean()
+    {
+        io_service.stop();
+        io_service_thread.join();
+    }
 }
