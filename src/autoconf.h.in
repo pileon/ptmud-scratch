@@ -1,0 +1,18 @@
+//
+// Created by arrow on 2016-01-02.
+//
+
+#ifndef PTMUD_SCRATCH_AUTOCONF_H_IN_H
+#define PTMUD_SCRATCH_AUTOCONF_H_IN_H
+
+#define PTMUD_scratch_VERSION_MAJOR @PTMUD_scratch_VERSION_MAJOR@
+#define PTMUD_scratch_VERSION_MINOR @PTMUD_scratch_VERSION_MINOR@
+#define PTMUD_scratch_VERSION_PATCH @PTMUD_scratch_VERSION_PATCH@
+#define PTMUD_scratch_VERSION_EXTRA "@PTMUD_scratch_VERSION_EXTRA@"
+
+#define PTMUD_scratch_VERSION_TAG \
+    "@PTMUD_scratch_VERSION_MAJOR@.@PTMUD_scratch_VERSION_MINOR@.@PTMUD_scratch_VERSION_PATCH@@PTMUD_scratch_VERSION_EXTRA@"
+
+#cmakedefine HAVE_STANDALONE_ASIO
+
+#endif //PTMUD_SCRATCH_AUTOCONF_H_IN_H

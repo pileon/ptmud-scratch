@@ -2,20 +2,21 @@
 <module type="CPP_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/src/location.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/player.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/basic_object.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/ptmud.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/character.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/basic_object.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/net/net.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/net/CMakeLists.txt" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/ptmud.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/basic_item.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/location.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/basic_item.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/character.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/ptmud.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/ptmud.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/autoconf.h.in" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/player.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/character.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/CMakeLists.txt" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/location.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/location.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/player.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/basic_item.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CMakeLists.txt" isTestSource="false" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
