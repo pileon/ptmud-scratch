@@ -5,6 +5,7 @@
       <sourceFolder url="file://$MODULE_DIR$/src/character.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/basic_object.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/net/net.cpp" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/net/net.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/net/CMakeLists.txt" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/basic_item.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/ptmud.cpp" isTestSource="false" />

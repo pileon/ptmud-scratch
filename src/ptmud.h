@@ -5,4 +5,6 @@
 #ifndef PTMUD_SCRATCH_PTMUD_H
 #define PTMUD_SCRATCH_PTMUD_H
 
+#include "autoconf.h"
+
 #endif //PTMUD_SCRATCH_PTMUD_H

@@ -18,6 +18,9 @@ endif()
 
 add_compile_options(-std=c++1z -Wall -Wextra -Wpedantic -Weffc++ -pipe -pthread)
 
+# TODO: This doesn't work!
+# find_package(Threads REQUIRED)
+
 #####################################################################
 
 set(Boost_USE_MULTITHREADED ON)
