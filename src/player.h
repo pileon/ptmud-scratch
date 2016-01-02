@@ -26,7 +26,7 @@ public:
     // TODO: Skills and spells
     // TODO: Command aliases
     // TODO: Command parser
-    // TODO: Network connection handling
+    // TODO: Network basic_connection handling
 
     player()
     : class_{}

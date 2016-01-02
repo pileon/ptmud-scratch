@@ -6,15 +6,16 @@
 #include <iostream>
 #include <thread>
 #include <forward_list>
+#include <memory>
 
 #include "net.h"
 #include "net_private.h"
-
+#include "basic_connection.h"
 namespace
 {
-    asio::io_service io_service;
-    std::thread      io_service_thread;
-    // std::forward_list<connection> connections;
+    asio::io_service                                     io_service;
+    std::thread                                          io_service_thread;
+    std::forward_list<std::shared_ptr<basic_connection>> connections;
 }
 
 namespace net
