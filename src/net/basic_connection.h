@@ -5,8 +5,6 @@
 #ifndef PTMUD_SCRATCH_CONNECTION_H
 #define PTMUD_SCRATCH_CONNECTION_H
 
-#include <memory>
-
 // Generic basic_connection class
 class basic_connection : public std::enable_shared_from_this<basic_connection>
 {

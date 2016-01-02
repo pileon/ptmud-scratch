@@ -11,11 +11,14 @@
 #include "net.h"
 #include "net_private.h"
 #include "basic_connection.h"
+#include "basic_server.h"
+
 namespace
 {
     asio::io_service                                     io_service;
     std::thread                                          io_service_thread;
-    std::forward_list<std::shared_ptr<basic_connection>> connections;
+    std::forward_list<std::shared_ptr<basic_server>>     servers;           // We can have multiple "servers"
+    std::forward_list<std::shared_ptr<basic_connection>> connections;       // All connections for all servers
 }
 
 namespace net
