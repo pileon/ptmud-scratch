@@ -13,7 +13,7 @@
 #include "basic_connection.h"
 #include "basic_server.h"
 
-namespace
+namespace net
 {
     asio::io_service                                     io_service;
     std::thread                                          io_service_thread;
@@ -33,6 +33,10 @@ namespace net
                 });
 
         // TODO: Start the acceptor
+
+        using tcp = asio::ip::tcp;
+        servers.push_front(std::make_shared<tcp_server>(io_service, tcp::endpoint(tcp::v4(), 7777)));
+        servers.push_front(std::make_shared<tcp_server>(io_service, tcp::endpoint(tcp::v6(), 7777)));
     }
 
     void clean()

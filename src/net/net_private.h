@@ -6,9 +6,9 @@
 #define PTMUD_SCRATCH_NET_PRIVATE_H
 
 #ifdef HAVE_STANDALONE_ASIO
-# include <asio/io_service.hpp>
+# include <asio.hpp>
 #else
-# include <boost/asio/io_service.hpp>
+# include <boost/asio.hpp>
 namespace asio = boost::asio;
 #endif
 

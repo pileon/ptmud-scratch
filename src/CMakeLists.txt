@@ -12,3 +12,9 @@ set(LIBRARIES net ${Boost_LIBRARIES} pthread)
 # endif()
 
 target_link_libraries(ptmud ${LIBRARIES})
+
+#####################################################################
+
+# add_custom_target(valgrind
+#         /usr/bin/valgrind ${CMAKE_CURRENT_BINARY_DIR}/ptmud
+#         DEPENDS ptmud)
