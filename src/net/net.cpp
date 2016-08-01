@@ -26,7 +26,6 @@ namespace net
     void init()
     {
         io_service_thread = std::thread(
-                // Note: CLion treats the lambda as an error, it's a known bug
                 []()
                 {
                     io_service.run();
